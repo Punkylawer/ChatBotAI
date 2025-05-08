@@ -97,23 +97,6 @@ public class ChatBotConfiguration {
                 .build();
     }
 
-    /*@Bean
-    public CustomRetriever customRetriever(MongoClient mongoClient,
-                                           @Value("${app.mongodb.db-name}") String dbName,
-                                           EmbeddingModel embeddingModel) {
-        return new CustomContentRetriever(mongoClient, dbName, "embeddings", embeddingModel);
-    }
-
-
-    @Bean
-    public ArticleBasedAssistant articleBasedAssistant(ChatModel chatModel,
-                                                       CustomRetriever customRetriever) {
-        return AiServices.builder(ArticleBasedAssistant.class)
-                .chatModel(chatModel)
-                .contentRetriever(query -> customRetriever.retrieve(query.text()))
-                .build();
-    }*/
-
     @Bean
     public ArticleBasedAssistant articleBasedAssistant(ChatModel chatModel, ContentRetriever contentRetriever) {
         return AiServices.builder(ArticleBasedAssistant.class)
