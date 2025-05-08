@@ -1,0 +1,5 @@
+com/chatbot/ai/ArticlesRepository.class
+com/chatbot/ai/ChatBotConfiguration.class
+com/chatbot/ai/LangchainChatbotApplication.class
+com/chatbot/ai/ChatBotController.class
+com/chatbot/ai/ArticleBasedAssistant.class
