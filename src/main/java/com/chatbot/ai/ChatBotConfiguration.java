@@ -77,7 +77,6 @@ public class ChatBotConfiguration {
                 .build();
     }
 
-
     // 4️⃣ Chat Model
     @Bean
     public ChatModel chatModel() {
