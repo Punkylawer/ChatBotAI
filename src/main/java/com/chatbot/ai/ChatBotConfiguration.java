@@ -71,6 +71,7 @@ public class ChatBotConfiguration {
     // 3️⃣ Embedding Model
     @Bean
     public EmbeddingModel embeddingModel() {
+        System.out.println("API KEY ACTUAL: " + apiKey);
         return OpenAiEmbeddingModel.builder()
                 .apiKey(apiKey)
                 .modelName(TEXT_EMBEDDING_3_SMALL)
