@@ -1,0 +1,11 @@
+src/main/java
+└── com
+    └── chatbot
+        └── ai
+            ├── ArticleBasedAssistant.java
+            ├── ArticlesRepository.java
+            ├── ChatBotConfiguration.java
+            ├── ChatBotController.java
+            └── LangchainChatbotApplication.java
+
+4 directories, 5 files
